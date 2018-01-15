@@ -33,7 +33,7 @@ class Handler extends StreamHandler
         $useLocking = false
     ) {
         $this->channel = $channel;
-        $formatter = new LineFormatter(null, null, false, true);
+        $formatter = new LineFormatter(null, null, true, true);
         $this->setFormatter($formatter);
         parent::__construct($stream, $level, $bubble, $filePermission, $useLocking);
     }
